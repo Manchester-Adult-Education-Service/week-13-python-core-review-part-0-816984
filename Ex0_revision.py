@@ -37,8 +37,10 @@ print("-------------------------------------------\n"
 # 4. Print the final 'total_cost' using an f-string, formatted to two decimal places.
 
 # Write your code below:
-
-
+price = 45.00
+VAT_RATE = 0.20
+total_cost = price + (price * VAT_RATE)
+print(f"Total cost: {total_cost:.2f}")
 # -------------------------------------------
 # CHECKPOINT
 # -------------------------------------------
@@ -70,6 +72,13 @@ print("\n-------------------------------------------\n"
 # 5. Otherwise (if total_cost is 60 or more), print "Purchase denied: Budget severely exceeded."
 
 # Write your code below:
+budget = 50
+if total_cost <= budget:
+    print("Purchase approved: Within budget.")
+elif total_cost >= budget or budget <= 60:
+    print("Warning: Purchase exceeds budget but is manageable.")
+else:
+    print("Purchase denied: Budget severely exceeded.")
 
 
 # -------------------------------------------
@@ -154,6 +163,7 @@ weekly_sales = [120.50, 155.75, 95.00, 180.25, 130.50]
 # 5. Print both the 'total_sales' and 'average_sale', formatted to two decimal places.
 
 # Write your code below:
+total_sales = 0
 
 
 # -------------------------------------------
