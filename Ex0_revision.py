@@ -37,8 +37,10 @@ print("-------------------------------------------\n"
 # 4. Print the final 'total_cost' using an f-string, formatted to two decimal places.
 
 # Write your code below:
-
-
+# price = 45.00
+# VAT_RATE = 0.20
+# total_cost = price + (price * VAT_RATE)
+# print(f"Total cost: {total_cost:.2f}")
 # -------------------------------------------
 # CHECKPOINT
 # -------------------------------------------
@@ -69,7 +71,14 @@ print("\n-------------------------------------------\n"
 # 4. If 'total_cost' is greater than 'budget' but less than 60, print "Warning: Purchase exceeds budget but is manageable."
 # 5. Otherwise (if total_cost is 60 or more), print "Purchase denied: Budget severely exceeded."
 
-# Write your code below:
+# # Write your code below:
+# budget = 50
+# if total_cost <= budget:
+#     print("Purchase approved: Within budget.")
+# elif total_cost >= budget or budget <= 60:
+#     print("Warning: Purchase exceeds budget but is manageable.")
+# else:
+#     print("Purchase denied: Budget severely exceeded.")
 
 
 # -------------------------------------------
@@ -105,18 +114,22 @@ print("\n-------------------------------------------\n"
 #
 # HINT: You may need to use a single `try` block that covers both `int()` conversions.
 
-def calculate_area():
-    # Insert try/except block here
-    # Remember to handle the input() and int() conversions inside the try block
-    length = int(input("Enter rectangle length: "))
-    width = int(input("Enter rectangle width: "))
-    area = length * width
-    return area
-    # Insert except block here
+# def calculate_area():
+#     try:
+#     # Insert try/except block here
+#     # Remember to handle the input() and int() conversions inside the try block
+#         length = int(input("Enter rectangle length: "))
+#         width = int(input("Enter rectangle width: "))
+#         area = length * width
+#         return area
+#     # Insert except block here
+#     except ValueError:
+#         print("Error: Please enter only numerical values.")
+#         return 0
 
-# Call the function:
-rectangle_area = calculate_area()
-print(f"Calculated Area: {rectangle_area}")
+# # Call the function:
+# rectangle_area = calculate_area()
+# print(f"Calculated Area: {rectangle_area}")
 
 
 # -------------------------------------------
@@ -154,6 +167,14 @@ weekly_sales = [120.50, 155.75, 95.00, 180.25, 130.50]
 # 5. Print both the 'total_sales' and 'average_sale', formatted to two decimal places.
 
 # Write your code below:
+# total_sales = 0
+
+# for sale in weekly_sales:
+#     total_sales += sale
+# days = len(weekly_sales)
+# average_sale = total_sales / days
+# print(f"Total sales: £{total_sales:.2f}")
+# print(f"Average Daily sale: £{average_sale:.2f}")
 
 
 # -------------------------------------------
